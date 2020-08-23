@@ -39,10 +39,8 @@ message.onkeyup = function () {
 
     characterCount.innerHTML = len;
 };
+
 //question 5
-//Write code that adds the class highlight 
-//to the body when the page has scrolled 
-//at least 35px, and removes it when scrolled less than that.
 
 const nav = document.querySelector("body");
 
