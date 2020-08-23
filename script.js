@@ -5,11 +5,17 @@ button.onclick = function () {
     document.body.style.background ="green";
 };
 // question 2
-const button2 = document.querySelector(".toggler")
-button2.onclick = function toggle () {
-    var element = document.querySelector(".togglee");
-    element.setAttribute("class", "extra");
-  }
+const button2 = document.querySelector(“.toggler”);
+const toggleBox = document.querySelector(“.togglee”);
+button2.onclick = function() {
+    toggleBox.classList.toggle(“extra”);
+    if (toggleBox.className === “togglee extra” ){
+        toggleBox.innerHTML = “Extra”;
+    }
+    else{
+        toggleBox.innerHTML = “Toggle my class.“;
+    }
+}
 
 //question 3
 
