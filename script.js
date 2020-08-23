@@ -1,9 +1,8 @@
 // question 1
-const button = document.querySelector("body");
+const button = document.getElementById("gb");
 
 button.onclick = function () {
-    console.log(event.target);
-    event.target.style.background ="green";
+    document.body.style.background ="green";
 };
 // question 2
 const button2 = document.querySelector(".toggler")
